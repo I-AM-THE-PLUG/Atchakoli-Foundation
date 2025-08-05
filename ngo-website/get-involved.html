@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Get Involved — Volunteer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="NGO logo"></a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="blog.html">News</a></li>
+          <li><a href="donate.html" class="btn btn-donate">Donate</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="volunteer">
+      <h1>Volunteer with Us</h1>
+      <p>Fill out the form below and we will contact you about opportunities that match your skills.</p>
+
+      <form class="volunteer-form" action="https://formspree.io/f/yourformid" method="POST">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel">
+
+        <label for="skills">Skills / Experience</label>
+        <textarea id="skills" name="skills" rows="4"></textarea>
+
+        <label for="availability">Availability</label>
+        <select id="availability" name="availability">
+          <option>Weekdays</option>
+          <option>Weekends</option>
+          <option>Flexible</option>
+        </select>
+
+        <button class="btn" type="submit">Submit Application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <img src="images/logo.png" class="footer-logo" alt="logo">
+        <p>Short mission statement</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="get-involved.html">Volunteer</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>email@example.org<br/>+233 24 000 0000</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Your NGO — All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
